@@ -1,0 +1,34 @@
+{
+  "typescript": true,
+  "directories": {
+    "config": "app/config",
+    "public": "public",
+    "start": "start",
+    "app": "app",
+    "contracts": "contracts",
+    "migrations": "database/migrations",
+    "commands": "commands",
+    "providers": "providers",
+    "seeders": "database/seeders",
+    "factories": "database/factories",
+    "resources": "resources",
+    "views": "resources/views",
+    "languageFiles": "resources/lang",
+    "tests": "tests",
+    "tmp": "tmp",
+    "httpControllers": "app/controllers",
+    "models": "app/models",
+    "services": "app/services",
+    "exceptions": "app/exceptions",
+    "middleware": "app/middleware",
+    "policies": "app/policies",
+    "validators": "app/validators"
+  },
+  "providers": [
+    "./app/providers/app_provider",
+    "@adonisjs/lucid/database_provider"
+  ],
+  "commands": [
+    "@adonisjs/lucid/commands"
+  ]
+}

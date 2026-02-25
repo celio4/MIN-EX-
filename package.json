@@ -1,0 +1,42 @@
+{
+  "name": "minex",
+  "version": "1.0.0",
+  "description": "MINEX RDC - Backend API",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "tsx bin/ace.ts serve --watch",
+    "build": "tsx bin/ace.ts build",
+    "start": "tsx bin/ace.ts serve",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "db:migrate": "tsx bin/ace.ts migration:run",
+    "db:migrate:status": "tsx bin/ace.ts migration:status",
+    "db:seed": "tsx bin/ace.ts db:seed",
+    "db:rollback": "tsx bin/ace.ts migration:rollback",
+    "db:ping": "tsx bin/ace.ts db:ping"
+  },
+  "dependencies": {
+    "@adonisjs/core": "^7.0.0",
+    "@adonisjs/lucid": "^22.0.0",
+    "@adonisjs/repl": "^4.0.0",
+    "dotenv": "^17.3.1",
+    "luxon": "^3.5.0",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@adonisjs/eslint-config": "^1.0.2",
+    "@adonisjs/prettier-config": "^1.4.0",
+    "@types/node": "^22.10.5",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2"
+  },
+  "eslintconfig": "./eslint.config.js",
+  "prettierconfig": "./.prettierrc"
+}
